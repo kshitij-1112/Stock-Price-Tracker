@@ -1,0 +1,67 @@
+.register-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 2rem; /* Add padding */
+  background-color: #405d72; /* Background color */
+  color: #f0f0f0; /* Light text color for contrast */
+  position: fixed; /* Fixed position */
+  top: 50%; /* Vertical center */
+  left: 50%; /* Horizontal center */
+  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  width: 60%; /* Set width to 60% of viewport */
+  max-width: 400px; /* Maximum width for larger screens */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+  z-index: 10; /* Ensure above other content */
+}
+
+.register-container h2 {
+  font-size: 2rem; /* Title font size */
+  margin-bottom: 1rem; /* Spacing below title */
+}
+
+.register-container form {
+  width: 100%; /* Full width form */
+  display: flex;
+  flex-direction: column; /* Stack form items vertically */
+}
+
+.register-container form div {
+  margin-bottom: 1rem; /* Spacing between form elements */
+}
+
+.register-container form label {
+  margin-bottom: 0.5rem; /* Space below label */
+}
+
+.register-container form input[type="email"],
+.register-container form input[type="password"] {
+  padding: 0.75rem; /* Padding for inputs */
+  font-size: 1rem; /* Font size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.register-container form button {
+  padding: 1rem 2rem; /* Button padding */
+  font-size: 1rem; /* Font size */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f0f0f0; /* Light background color */
+  color: #405d72; /* Dark text color */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Transition effect */
+}
+
+.register-container form button:disabled {
+  background-color: #ccc; /* Disable button color */
+  color: #666; /* Disable text color */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+.register-container form button:hover {
+  background-color: #34495e; /* Darken background color on hover */
+  color: #fff; /* Lighten text color on hover */
+}

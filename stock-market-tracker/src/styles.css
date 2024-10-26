@@ -1,0 +1,10 @@
+/* src/styles.css */
+.App {
+  text-align: center;
+}
+
+.stock-detail {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}

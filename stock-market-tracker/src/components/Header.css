@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 2rem; /* Increased padding for more space */
+  background-color: #405d72; /* Updated color to #405D72 */
+  color: #f0f0f0; /* Light text color for contrast */
+  position: fixed; /* Make the header fixed to the top */
+  top: 50%; /* Position it at the vertical center */
+  left: 50%; /* Position it at the horizontal center */
+  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  width: 160%; /* Set width to 160% of viewport for twice the size */
+  max-width: 800px; /* Maximum width for larger screens */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+  z-index: 10; /* Ensure the header stays above other content */
+}
+
+.header-title {
+  font-size: 2.5rem; /* Larger title font size */
+  margin: 0; /* Remove default margin for better alignment */
+  padding-bottom: 1rem; /* Add spacing below the title */
+}
+
+.header-nav {
+  display: flex; /* Make the navigation list horizontal */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  justify-content: center; /* Center the navigation links horizontally */
+}
+
+.header-item {
+  margin: 0 1.5rem; /* Add spacing between items */
+}
+
+.header-link {
+  display: inline-block; /* Allow setting width and height */
+  padding: 1rem 2rem; /* Increased padding for bigger buttons */
+  border: 1px solid #f0f0f0; /* Light border color */
+  border-radius: 6px; /* Rounded corners for a nicer look */
+  text-decoration: none; /* Remove underline from links */
+  color: #f0f0f0; /* Light text color */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer; /* Indicate clickable behavior */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Add transition for hover effect */
+  font-weight: bold; /* Make link text bold */
+}
+
+.header-link:hover {
+  background-color: #34495e; /* Darken background color on hover */
+  color: #fff; /* Lighten text color on hover */
+}
